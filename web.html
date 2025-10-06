@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joseph Mwangi | Web & Solutions Specialist</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Arial, sans-serif;line-height:1.6;color:#333;scroll-behavior:smooth;}
+
+/* Navigation */
+nav{position:fixed;top:0;width:100%;background:#1c1c1c;color:#fff;display:flex;justify-content:center;z-index:1000;}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin:0 15px;}
+nav ul li a{text-decoration:none;color:#fff;padding:15px 0;display:block;font-weight:bold;}
+nav ul li a:hover{color:#4CAF50;}
+
+/* Section Styling */
+section{min-height:100vh;padding:120px 20px 60px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden;}
+section h2{text-align:center;margin-bottom:40px;position:relative;z-index:2;}
+
+/* Homepage */
+#home{background: linear-gradient(to right, #1c1c1c, #2e3a59); color:#fff;text-align:center;}
+#home h1{font-size:2.8rem;margin-bottom:20px;}
+#home p{font-size:1.2rem;margin-bottom:20px;}
+#home a{background:#4CAF50;color:#fff;padding:12px 25px;text-decoration:none;border-radius:5px;font-weight:bold;}
+#home img{width:150px;border-radius:50%;margin-top:30px;border:3px solid #4CAF50;}
+
+/* About Section with shapes */
+#about{background:#e0f7fa; color:#333; position:relative;}
+#about::before{
+    content:""; position:absolute; top:-50px; left:-50px; width:200%; height:200%;
+    background: radial-gradient(circle at top left, #4dd0e1, #80deea);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 80%);
+    opacity:0.2; z-index:1;
+}
+#about p{max-width:600px;font-size:1.1rem;text-align:center;position:relative; z-index:2;}
+
+/* Skills Section */
+#skills{background:#2e3a59;color:#fff; position:relative;}
+#skills::before{
+    content:""; position:absolute; bottom:-100px; right:-100px; width:300px; height:300px;
+    background: rgba(255,255,255,0.05); border-radius:50%; z-index:1;
+}
+.skills-container{display:flex;flex-wrap:wrap;justify-content:center;gap:15px;margin-top:20px;position:relative; z-index:2;}
+.skills-container div{background:#4CAF50;padding:10px 15px;border-radius:50px;font-weight:bold;transition:transform 0.3s;}
+.skills-container div:hover{transform:scale(1.1);}
+
+/* Portfolio Section with gradient background */
+#portfolio{
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2); 
+    position:relative; 
+    padding-bottom:100px;
+}
+#portfolio::before{
+    content:""; position:absolute; top:0; left:0; width:100%; height:100%;
+    background: url('https://www.transparenttextures.com/patterns/diagonal-noise.png') repeat;
+    opacity:0.05; z-index:1;
+}
+.portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-top:20px;position:relative; z-index:2;}
+.portfolio div{border-radius:10px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,0.1);background:#fff;transition:transform 0.3s;}
+.portfolio div:hover{transform: translateY(-5px);}
+.portfolio img{width:100%;display:block;}
+.portfolio div div{padding:20px;}
+.portfolio a{color:#4CAF50;text-decoration:none;font-weight:bold;}
+
+/* Contact Section */
+#contact{background: linear-gradient(to right, #1c1c1c, #2e3a59); color:#fff; position:relative;}
+#contact::before{
+    content:""; position:absolute; top:50%; left:50%; width:500px; height:500px; background: rgba(255,255,255,0.05);
+    border-radius:50%; transform: translate(-50%, -50%); z-index:1;
+}
+form{max-width:600px;width:100%;display:flex;flex-direction:column;gap:15px;margin-top:20px;position:relative; z-index:2;}
+input, textarea{padding:10px;border-radius:5px;border:none;}
+button{padding:10px 20px;background:#4CAF50;color:#fff;border:none;border-radius:5px;cursor:pointer;font-weight:bold;}
+button:hover{background:#45a049;}
+
+footer{background:#333;color:#fff;text-align:center;padding:20px;position:relative; z-index:2;}
+footer a{color:#4CAF50;margin:0 10px;text-decoration:none;}
+
+@media(max-width:600px){
+    #home h1{font-size:2rem;}
+    #home p{font-size:1rem;}
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Work Samples</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Homepage -->
+<section id="home">
+    <h1>Hi, I’m Joseph Mwangi – Website & Web Solutions Specialist</h1>
+    <p>Creating responsive, functional, and visually engaging websites.</p>
+    <a href="#portfolio">View My Work</a>
+    <p style="margin-top:20px;">Website Maintenance | Web Programming | Development | Databases | Data Entry</p>
+    <img src="jose.png" alt="Joseph Mwangi">
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Versatile web designer & developer creating user-friendly, responsive websites. Skilled in programming, database management, and website maintenance.</p>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>PHP</div>
+        <div>WordPress</div>
+        <div>Database Management</div>
+        <div>Website Maintenance</div>
+        <div>Data Entry</div>
+    </div>
+    <div class="skills-container" style="margin-top:20px;">
+        <div>Attention to Detail</div>
+        <div>Problem-Solving</div>
+        <div>Client Collaboration</div>
+        <div>Time Management</div>
+    </div>
+</section>
+
+<!-- Work Samples -->
+<section id="portfolio">
+    <h2>Work Samples</h2>
+    <div class="portfolio">
+        <div>
+            <img src="https://engineering.fb.com/wp-content/uploads/2018/10/PSI-architecture-1.jpg" alt="Facebook Linux Kernel Project">
+            <div>
+                <h3>Facebook Linux Kernel Enhancements</h3>
+                <p>Contributions by Facebook to the Linux Kernel focused on resource management and performance monitoring.</p>
+                <p><strong>Technologies:</strong> Linux Kernel, C</p>
+                <p><a href="https://engineering.fb.com/2018/10/30/open-source/linux/" target="_blank">Learn More</a></p>
+            </div>
+        </div>
+        <div>
+            <img src="https://github.com/facebook/openbmc/raw/master/docs/images/openbmc-logo.png" alt="OpenBMC Project">
+            <div>
+                <h3>OpenBMC</h3>
+                <p>Open-source software framework by Facebook for Board Management Controllers (BMCs).</p>
+                <p><strong>Technologies:</strong> Linux, Yocto, C++, Python</p>
+                <p><a href="https://github.com/facebook/openbmc" target="_blank">Explore Project</a></p>
+            </div>
+        </div>
+        <div>
+            <img src="https://developers.facebook.com/blog/wp-content/uploads/2021/12/drgn-hero.jpg" alt="drgn Project">
+            <div>
+                <h3>drgn Debugger</h3>
+                <p>An open-source debugger by Meta to debug Linux kernel efficiently using Python scripting.</p>
+                <p><strong>Technologies:</strong> Python, C, Linux Kernel</p>
+                <p><a href="https://developers.facebook.com/blog/post/2021/12/09/drgn-how-linux-kernel-team-meta-debugs-kernel-scale/" target="_blank">Read More</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" value="jn3223973@gmail.com" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:15px;">Email: <a href="mailto:jn3223973@gmail.com">jn3223973@gmail.com</a></p>
+    <p>Social: <a href="https://facebook.com/linuxkernel" target="_blank">Facebook: linux kernel</a></p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>Copyright © Joseph Mwangi</p>
+    <p>
+        <a href="#home">Home</a> | 
+        <a href="#about">About</a> | 
+        <a href="#skills">Skills</a> | 
+        <a href="#portfolio">Portfolio</a> | 
+        <a href="#contact">Contact</a>
+    </p>
+</footer>
+
+</body>
+</html>
